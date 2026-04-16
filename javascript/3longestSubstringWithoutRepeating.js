@@ -10,11 +10,13 @@ var lengthOfLongestSubstring = function(s) {
     let maxLength = 0;
 
     for (let right = 0; right < s.length; right++) {
+        // If character at 'right' is a duplicate, shrink window from 'left'
         while(set.has(s[right])) {
             set.delete(s[left]);
             left++;
         }
 
+        // Add new character and update max length
         set.add(s[right]);
         maxLength = Math.max(maxLength, right - left + 1);
     }
