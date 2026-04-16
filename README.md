@@ -1,0 +1,172 @@
+# 🧩 LeetCode Solutions in JavaScript
+
+[![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Problems](https://img.shields.io/badge/Problems-30%2B-blue)](./javascript/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+A curated collection of clean, well-documented solutions to popular LeetCode problems, written in JavaScript. Each solution includes problem description, approach explanation, and time/space complexity analysis.
+
+## 📁 Repository Structure
+
+\`\`\`
+.
+└── javascript/
+    ├── 1twoSum.js
+    ├── 20validParentheses.js
+    ├── 200numberOfIslands.js
+    ├── 238productOfArrayExceptSelf.js
+    └── ... (30+ solutions)
+\`\`\`
+
+## 🎯 Problem Categories
+
+### Arrays & Hashing
+| # | Problem | Difficulty | Key Concepts |
+|---|---------|------------|--------------|
+| 1 | [Two Sum](./javascript/1twoSum.js) | Easy | Hash Map |
+| 217 | [Contains Duplicate](./javascript/217containsDuplicate.js) | Easy | Set |
+| 219 | [Contains Duplicate II](./javascript/219containsDuplicateII.js) | Easy | Sliding Window + Hash Map |
+| 238 | [Product of Array Except Self](./javascript/238productOfArrayExceptSelf.js) | Medium | Prefix/Suffix Products |
+| 560 | [Subarray Sum Equals K](./javascript/560subarraySumEqualsK.js) | Medium | Prefix Sum + Hash Map |
+| 325 | [Maximum Size Subarray Sum Equals K](./javascript/325maximumSizeSubarraySumEqualsK.js) | Medium | Prefix Sum |
+
+### Two Pointers & Sliding Window
+| # | Problem | Difficulty | Key Concepts |
+|---|---------|------------|--------------|
+| 3 | [Longest Substring Without Repeating Characters](./javascript/3longestSubstringWithoutRepeating.js) | Medium | Sliding Window + Set |
+| 424 | [Longest Repeating Character Replacement](./javascript/424longestRepeatingCharacterReplacement.js) | Medium | Sliding Window |
+| 239 | [Sliding Window Maximum](./javascript/239slidingWindowMaximum.js) | Hard | Monotonic Deque |
+| 340 | [Longest Substring with At Most K Distinct Characters](./javascript/340longestSubstringwithAtMostKDistinctCharacters.js) | Medium | Sliding Window |
+| 283 | [Move Zeroes](./javascript/283moveZeroes.js) | Easy | Two Pointers |
+
+### Strings
+| # | Problem | Difficulty | Key Concepts |
+|---|---------|------------|--------------|
+| 242 | [Valid Anagram](./javascript/242validAnagram.js) | Easy | Hash Map / Counter |
+| 49 | [Group Anagrams](./javascript/49groupAnagrams.js) | Medium | Hash Map + Sorting |
+| 387 | [First Unique Character in a String](./javascript/387firstUniqueCharacterinaString.js) | Easy | Hash Map |
+| 344 | [Reverse String](./javascript/344reverseString.js) | Easy | Two Pointers |
+| 541 | [Reverse String II](./javascript/541reverseStringII.js) | Easy | String Manipulation |
+| 394 | [Decode String](./javascript/394decodeString.js) | Medium | Stack |
+
+### Graphs & Trees
+| # | Problem | Difficulty | Key Concepts |
+|---|---------|------------|--------------|
+| 200 | [Number of Islands](./javascript/200numberOfIslands.js) | Medium | DFS/BFS on Grid |
+| 133 | [Clone Graph](./javascript/133cloneGraph.js) | Medium | DFS/BFS + Hash Map |
+| 207 | [Course Schedule](./javascript/207courseSchedule.js) | Medium | Topological Sort (Kahn's Algorithm) |
+| 210 | [Course Schedule II](./javascript/210courseScheduleII.js) | Medium | Topological Sort |
+
+### Stack & Design
+| # | Problem | Difficulty | Key Concepts |
+|---|---------|------------|--------------|
+| 20 | [Valid Parentheses](./javascript/20validParentheses.js) | Easy | Stack |
+| 380 | [Insert Delete GetRandom O(1)](./javascript/380insertDeleteGetRandom.js) | Medium | Hash Map + Array |
+
+### Dynamic Programming / Greedy
+| # | Problem | Difficulty | Key Concepts |
+|---|---------|------------|--------------|
+| 121 | [Best Time to Buy and Sell Stock](./javascript/121bestTimeToBuyAndSellStock.js) | Easy | Kadane's Algorithm |
+| 54 | [Spiral Matrix](./javascript/54spiralMatrix.js) | Medium | Matrix Traversal |
+
+### Misc
+| # | Problem | Difficulty | Key Concepts |
+|---|---------|------------|--------------|
+| 412 | [Fizz Buzz](./javascript/412fizzBuzz.js) | Easy | Basic Logic |
+| 2694 | [Event Emitter](./javascript/2694eventEmitter.js) | Medium | Design Pattern |
+| 1493 | [Longest Subarray of 1's After Deleting One Element](./javascript/1493longestSubarrayof1'sAfterDeletingOneElement.js) | Medium | Sliding Window |
+| 2840 | [Check if Strings Can be Made Equal With Operations II](./javascript/2840checkIfStringsCanbeMadeEqualWithOperationsII.js) | Medium | String Analysis |
+
+## 🚀 Getting Started
+
+### Prerequisites
+- [Node.js](https://nodejs.org/) (v14 or higher recommended)
+
+### Running Solutions
+
+Each file is self-contained and can be run directly with Node.js:
+
+\`\`\`bash
+# Run a specific solution
+node javascript/1twoSum.js
+
+# Or load into your preferred JavaScript environment
+\`\`\`
+
+> **Note:** Solutions are designed as LeetCode-compatible function implementations. To test locally, wrap them in a test harness or add your own test cases.
+
+## 📝 Solution Format
+
+Each solution file follows a consistent structure:
+
+\`\`\`javascript
+/**
+ * [Problem Number]. [Problem Title]
+ * https://leetcode.com/problems/[problem-slug]/
+ * Difficulty: [Easy|Medium|Hard]
+ *
+ * [Problem description...]
+ */
+
+/**
+ * @param {type} paramName - Parameter description
+ * @return {type} - Return description
+ */
+var solutionName = function(params) {
+    // Algorithm implementation with comments
+};
+\`\`\`
+
+## 🎓 Learning Path
+
+**Beginner:**
+1. Two Sum → Contains Duplicate → Valid Parentheses → Fizz Buzz
+
+**Intermediate:**
+1. Product of Array Except Self → Longest Substring Without Repeating Characters
+2. Group Anagrams → Valid Anagram
+3. Number of Islands → Course Schedule
+
+**Advanced:**
+1. Sliding Window Maximum (Monotonic Queue)
+2. Course Schedule II (Topological Sort)
+
+## 🔧 Common Patterns Used
+
+| Pattern | Problems | Description |
+|---------|----------|-------------|
+| **Hash Map** | Two Sum, Group Anagrams | O(1) lookups for complement values |
+| **Sliding Window** | Longest Substring, Max Subarray | Dynamic subarray/substring management |
+| **Two Pointers** | Reverse String, Move Zeroes | In-place array manipulation |
+| **DFS/BFS** | Number of Islands, Clone Graph | Graph traversal and exploration |
+| **Topological Sort** | Course Schedule I & II | Ordering with dependencies |
+| **Prefix Sum** | Subarray Sum Equals K | Cumulative sum optimization |
+
+## 📊 Complexity Summary
+
+Most solutions are optimized for:
+- **Time Complexity:** O(n) or O(n log n)
+- **Space Complexity:** O(1) auxiliary or O(n) for data structures
+
+Individual complexities are documented in each solution file.
+
+## 🤝 Contributing
+
+Contributions are welcome! If you'd like to add a solution:
+1. Follow the existing file naming convention: `[problemNumber][camelCaseTitle].js`
+2. Include the LeetCode problem description in the header comment
+3. Add JSDoc annotations for parameters and return values
+
+## 📚 Resources
+
+- [LeetCode](https://leetcode.com/) - Practice platform
+- [JavaScript MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript) - Language reference
+- [Big O Cheat Sheet](https://www.bigocheatsheet.com/) - Complexity analysis
+
+## 📜 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+⭐ **Star this repo** if you find it helpful for your interview preparation!
