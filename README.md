@@ -29,6 +29,9 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 238 | [Product of Array Except Self](./javascript/238productOfArrayExceptSelf.js) | Medium | Prefix/Suffix Products |
 | 560 | [Subarray Sum Equals K](./javascript/560subarraySumEqualsK.js) | Medium | Prefix Sum + Hash Map |
 | 325 | [Maximum Size Subarray Sum Equals K](./javascript/325maximumSizeSubarraySumEqualsK.js) | Medium | Prefix Sum |
+| 204 | [Count Primes](./javascript/204countPrimes.js) | Medium | Sieve of Eratosthenes |
+| 326 | [Power of Three](./javascript/326powerOfThree.js) | Easy | Math / Division |
+| 1572 | [Matrix Diagonal Sum](./javascript/1572matrixDiagonalSum.js) | Easy | Matrix Traversal |
 
 ### Two Pointers & Sliding Window
 | # | Problem | Difficulty | Key Concepts |
@@ -38,6 +41,7 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 239 | [Sliding Window Maximum](./javascript/239slidingWindowMaximum.js) | Hard | Monotonic Deque |
 | 340 | [Longest Substring with At Most K Distinct Characters](./javascript/340longestSubstringwithAtMostKDistinctCharacters.js) | Medium | Sliding Window |
 | 283 | [Move Zeroes](./javascript/283moveZeroes.js) | Easy | Two Pointers |
+| — | [Longest Subarray with Sum Not Exceeding K](./javascript/longestSubarraywithSumNotExceedingK.js) | Medium | Sliding Window |
 
 ### Strings
 | # | Problem | Difficulty | Key Concepts |
@@ -56,6 +60,12 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 133 | [Clone Graph](./javascript/133cloneGraph.js) | Medium | DFS/BFS + Hash Map |
 | 207 | [Course Schedule](./javascript/207courseSchedule.js) | Medium | Topological Sort (Kahn's Algorithm) |
 | 210 | [Course Schedule II](./javascript/210courseScheduleII.js) | Medium | Topological Sort |
+
+### Intervals
+| # | Problem | Difficulty | Key Concepts |
+|---|---------|------------|--------------|
+| 253 | [Meeting Rooms II](./javascript/253meetingRoomsII.js) | Medium | Two Pointers + Sorting |
+| 759 | [Employee Free Time](./javascript/759employeeFreeTime.js) | Hard | Merge Intervals |
 
 ### Stack & Design
 | # | Problem | Difficulty | Key Concepts |
