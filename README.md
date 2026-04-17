@@ -1,7 +1,7 @@
 # 🧩 LeetCode Solutions in JavaScript
 
 [![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Problems](https://img.shields.io/badge/Problems-39%2B-blue)](./javascript/)
+[![Problems](https://img.shields.io/badge/Problems-40%2B-blue)](./javascript/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A curated collection of clean, well-documented solutions to popular LeetCode problems, written in JavaScript. Each solution includes problem description, approach explanation, and time/space complexity analysis.
@@ -80,6 +80,7 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 ### Dynamic Programming / Greedy
 | # | Problem | Difficulty | Key Concepts |
 |---|---------|------------|--------------|
+| 53 | [Maximum Subarray](./javascript/53maximumSubarray.js) | Easy | Kadane's Algorithm |
 | 121 | [Best Time to Buy and Sell Stock](./javascript/121bestTimeToBuyAndSellStock.js) | Easy | Kadane's Algorithm |
 | 54 | [Spiral Matrix](./javascript/54spiralMatrix.js) | Medium | Matrix Traversal |
 
