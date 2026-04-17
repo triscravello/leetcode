@@ -1,7 +1,7 @@
 # 🧩 LeetCode Solutions in JavaScript
 
 [![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Problems](https://img.shields.io/badge/Problems-30%2B-blue)](./javascript/)
+[![Problems](https://img.shields.io/badge/Problems-34%2B-blue)](./javascript/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A curated collection of clean, well-documented solutions to popular LeetCode problems, written in JavaScript. Each solution includes problem description, approach explanation, and time/space complexity analysis.
@@ -31,6 +31,7 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 325 | [Maximum Size Subarray Sum Equals K](./javascript/325maximumSizeSubarraySumEqualsK.js) | Medium | Prefix Sum |
 | 204 | [Count Primes](./javascript/204countPrimes.js) | Medium | Sieve of Eratosthenes |
 | 326 | [Power of Three](./javascript/326powerOfThree.js) | Easy | Math / Division |
+| 268 | [Missing Number](./javascript/268missingNumber.js) | Easy | XOR / Math |
 | 1572 | [Matrix Diagonal Sum](./javascript/1572matrixDiagonalSum.js) | Easy | Matrix Traversal |
 
 ### Two Pointers & Sliding Window
@@ -42,11 +43,13 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 340 | [Longest Substring with At Most K Distinct Characters](./javascript/340longestSubstringwithAtMostKDistinctCharacters.js) | Medium | Sliding Window |
 | 283 | [Move Zeroes](./javascript/283moveZeroes.js) | Easy | Two Pointers |
 | — | [Longest Subarray with Sum Not Exceeding K](./javascript/longestSubarraywithSumNotExceedingK.js) | Medium | Sliding Window |
+| 713 | [Subarray Product Less Than K](./javascript/713subarrayProductLessThanK.js) | Medium | Sliding Window |
 
 ### Strings
 | # | Problem | Difficulty | Key Concepts |
 |---|---------|------------|--------------|
 | 242 | [Valid Anagram](./javascript/242validAnagram.js) | Easy | Hash Map / Counter |
+| 249 | [Group Shifted Strings](./javascript/249groupShiftedStrings.js) | Medium | Hash Map + Pattern |
 | 49 | [Group Anagrams](./javascript/49groupAnagrams.js) | Medium | Hash Map + Sorting |
 | 387 | [First Unique Character in a String](./javascript/387firstUniqueCharacterinaString.js) | Easy | Hash Map |
 | 344 | [Reverse String](./javascript/344reverseString.js) | Easy | Two Pointers |
@@ -60,6 +63,7 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 133 | [Clone Graph](./javascript/133cloneGraph.js) | Medium | DFS/BFS + Hash Map |
 | 207 | [Course Schedule](./javascript/207courseSchedule.js) | Medium | Topological Sort (Kahn's Algorithm) |
 | 210 | [Course Schedule II](./javascript/210courseScheduleII.js) | Medium | Topological Sort |
+| 994 | [Rotting Oranges](./javascript/994rottingOranges.js) | Medium | BFS on Grid |
 
 ### Intervals
 | # | Problem | Difficulty | Key Concepts |
