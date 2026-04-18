@@ -91,6 +91,7 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 2694 | [Event Emitter](./javascript/2694eventEmitter.js) | Medium | Design Pattern |
 | 1493 | [Longest Subarray of 1's After Deleting One Element](./javascript/1493longestSubarrayof1'sAfterDeletingOneElement.js) | Medium | Sliding Window |
 | 2840 | [Check if Strings Can be Made Equal With Operations II](./javascript/2840checkIfStringsCanbeMadeEqualWithOperationsII.js) | Medium | String Analysis |
+| — | [Triple Zigzag](./javascript/tripleZigzag.js) | Easy | Array Traversal |
 
 ## 🚀 Getting Started
 
