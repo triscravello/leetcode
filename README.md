@@ -85,8 +85,10 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 416 | [Partition Equal Subset Sum](./javascript/416partitionEqualSubsetSum.js) | Medium | 0/1 Knapsack / DP |
 | 494 | [Target Sum](./javascript/494targetSum.js) | Medium | 0/1 Knapsack / DP |
 | 53 | [Maximum Subarray](./javascript/53maximumSubarray.js) | Easy | Kadane's Algorithm |
+| 322 | [Coin Change](./javascript/322coinChange.js) | Medium | Unbounded Knapsack / DP |
 | 121 | [Best Time to Buy and Sell Stock](./javascript/121bestTimeToBuyAndSellStock.js) | Easy | Kadane's Algorithm |
 | 54 | [Spiral Matrix](./javascript/54spiralMatrix.js) | Medium | Matrix Traversal |
+| 1049 | [Last Stone Weight II](./javascript/1049lastStoneWeightII.js) | Medium | 0/1 Knapsack / Partition DP |
 
 ### Misc
 | # | Problem | Difficulty | Key Concepts |
@@ -97,6 +99,7 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 2694 | [Event Emitter](./javascript/2694eventEmitter.js) | Medium | Design Pattern |
 | 1493 | [Longest Subarray of 1's After Deleting One Element](./javascript/1493longestSubarrayof1'sAfterDeletingOneElement.js) | Medium | Sliding Window |
 | 2840 | [Check if Strings Can be Made Equal With Operations II](./javascript/2840checkIfStringsCanbeMadeEqualWithOperationsII.js) | Medium | String Analysis |
+| 1046 | [Last Stone Weight](./javascript/1046lastStoneWeight.js) | Easy | Simulation / Sorting |
 | — | [Triple Zigzag](./javascript/tripleZigzag.js) | Easy | Array Traversal |
 
 ## 🚀 Getting Started
