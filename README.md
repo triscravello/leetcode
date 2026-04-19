@@ -15,7 +15,7 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
     ├── 20validParentheses.js
     ├── 200numberOfIslands.js
     ├── 238productOfArrayExceptSelf.js
-    └── ... (30+ solutions)
+    └── ... (40+ solutions)
 \`\`\`
 
 ## 🎯 Problem Categories
@@ -27,8 +27,10 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 217 | [Contains Duplicate](./javascript/217containsDuplicate.js) | Easy | Set |
 | 219 | [Contains Duplicate II](./javascript/219containsDuplicateII.js) | Easy | Sliding Window + Hash Map |
 | 238 | [Product of Array Except Self](./javascript/238productOfArrayExceptSelf.js) | Medium | Prefix/Suffix Products |
+| 304 | [Range Sum Query 2D - Immutable](./javascript/304rangeSumQuery2DImmutable.js) | Medium | 2D Prefix Sum |
 | 560 | [Subarray Sum Equals K](./javascript/560subarraySumEqualsK.js) | Medium | Prefix Sum + Hash Map |
 | 325 | [Maximum Size Subarray Sum Equals K](./javascript/325maximumSizeSubarraySumEqualsK.js) | Medium | Prefix Sum |
+| 1314 | [Matrix Block Sum](./javascript/1314matrixBlockSum.js) | Medium | 2D Prefix Sum |
 | 204 | [Count Primes](./javascript/204countPrimes.js) | Medium | Sieve of Eratosthenes |
 | 326 | [Power of Three](./javascript/326powerOfThree.js) | Easy | Math / Division |
 | 268 | [Missing Number](./javascript/268missingNumber.js) | Easy | XOR / Math |
@@ -80,6 +82,8 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 ### Dynamic Programming / Greedy
 | # | Problem | Difficulty | Key Concepts |
 |---|---------|------------|--------------|
+| 416 | [Partition Equal Subset Sum](./javascript/416partitionEqualSubsetSum.js) | Medium | 0/1 Knapsack / DP |
+| 494 | [Target Sum](./javascript/494targetSum.js) | Medium | 0/1 Knapsack / DP |
 | 53 | [Maximum Subarray](./javascript/53maximumSubarray.js) | Easy | Kadane's Algorithm |
 | 121 | [Best Time to Buy and Sell Stock](./javascript/121bestTimeToBuyAndSellStock.js) | Easy | Kadane's Algorithm |
 | 54 | [Spiral Matrix](./javascript/54spiralMatrix.js) | Medium | Matrix Traversal |
@@ -88,6 +92,8 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | # | Problem | Difficulty | Key Concepts |
 |---|---------|------------|--------------|
 | 412 | [Fizz Buzz](./javascript/412fizzBuzz.js) | Easy | Basic Logic |
+| 728 | [Self Dividing Numbers](./javascript/728selfDividingNumbers.js) | Easy | Math / Number Theory |
+| 1492 | [The kth Factor of n](./javascript/1492theKthFactorofN.js) | Medium | Math / Factors |
 | 2694 | [Event Emitter](./javascript/2694eventEmitter.js) | Medium | Design Pattern |
 | 1493 | [Longest Subarray of 1's After Deleting One Element](./javascript/1493longestSubarrayof1'sAfterDeletingOneElement.js) | Medium | Sliding Window |
 | 2840 | [Check if Strings Can be Made Equal With Operations II](./javascript/2840checkIfStringsCanbeMadeEqualWithOperationsII.js) | Medium | String Analysis |
@@ -136,16 +142,18 @@ var solutionName = function(params) {
 ## 🎓 Learning Path
 
 **Beginner:**
-1. Two Sum → Contains Duplicate → Valid Parentheses → Fizz Buzz
+1. Two Sum → Contains Duplicate → Valid Parentheses → Fizz Buzz → Self Dividing Numbers
 
 **Intermediate:**
 1. Product of Array Except Self → Longest Substring Without Repeating Characters
 2. Group Anagrams → Valid Anagram
 3. Number of Islands → Course Schedule
+4. Range Sum Query 2D → Matrix Block Sum (Prefix Sum series)
 
 **Advanced:**
 1. Sliding Window Maximum (Monotonic Queue)
 2. Course Schedule II (Topological Sort)
+3. Partition Equal Subset Sum → Target Sum (0/1 Knapsack series)
 
 ## 🔧 Common Patterns Used
 
@@ -156,7 +164,9 @@ var solutionName = function(params) {
 | **Two Pointers** | Reverse String, Move Zeroes | In-place array manipulation |
 | **DFS/BFS** | Number of Islands, Clone Graph | Graph traversal and exploration |
 | **Topological Sort** | Course Schedule I & II | Ordering with dependencies |
-| **Prefix Sum** | Subarray Sum Equals K | Cumulative sum optimization |
+| **Prefix Sum** | Subarray Sum Equals K, Range Sum Query 2D, Matrix Block Sum | Cumulative sum optimization |
+| **0/1 Knapsack DP** | Partition Equal Subset Sum, Target Sum | Subset sum and target achievement |
+| **2D Prefix Sum** | Range Sum Query 2D, Matrix Block Sum | Efficient rectangle sum queries |
 
 ## 📊 Complexity Summary
 
@@ -169,7 +179,7 @@ Individual complexities are documented in each solution file.
 ## 🤝 Contributing
 
 Contributions are welcome! If you'd like to add a solution:
-1. Follow the existing file naming convention: `[problemNumber][camelCaseTitle].js`
+1. Follow the existing file naming convention: \`[problemNumber][camelCaseTitle].js\`
 2. Include the LeetCode problem description in the header comment
 3. Add JSDoc annotations for parameters and return values
 
