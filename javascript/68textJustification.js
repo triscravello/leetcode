@@ -22,44 +22,52 @@
  */
 var fullJustify = function(words, maxWidth) {
     const result = [];
-    let line = [];
-    let lineLength = 0;
+    const totalWords = words.length;
+    let wordIndex = 0;
 
-    for (let word of words) {
-        if (lineLength + word.length + line.length > maxWidth) {
-            result.push(justifyLine(line, lineLength, maxWidth));
-            line = [];
-            lineLength = 0;
+    // Process words until all are placed in lines
+    while (wordIndex < totalWords) {
+        // build current line by adding words that fit within maxWidth
+        const currentLineWords = [words[wordIndex]];
+        let currentLineLength = words[wordIndex].length;
+        wordIndex++;
+
+        // keep adding words while they fit (including minimum one space between words)
+        while (wordIndex < totalWords && currentLineLength + 1 + words[wordIndex].length <= maxWidth) {
+            currentLineWords.push(words[wordIndex]);
+            currentLineLength += 1 + words[wordIndex].length;
+            wordIndex++;
         }
 
-        line.push(word);
-        lineLength += word.length;
-    }
+        // Handle last line or single word line - left justified
+        if (wordIndex === totalWords || currentLineWords.length === 1) {
+            const leftJustifiedText = currentLineWords.join(' ');
+            const rightPadding = ' '.repeat(maxWidth - leftJustifiedText.length);
+            result.push(leftJustifiedText + rightPadding);
+            continue;
+        }
 
-    result.push(leftJustifyLine(line, maxWidth));
+        // Calculate space distribution for full justification
+        // Total spaces needed minus the minimum single spaces between words
+        const totalSpacesToDistribute = maxWidth - (currentLineLength - currentLineWords.length + 1);
+        const gapsBetweenWords = currentLineWords.length - 1;
+        const baseSpacesPerGap = Math.floor(totalSpacesToDistribute / gapsBetweenWords);
+        const extraSpaces = totalSpacesToDistribute % gapsBetweenWords;
+
+        // Build the fully justified line
+        const justifiedLine = [];
+        for (let i = 0; i < gapsBetweenWords; i++) {
+            justifiedLine.push(currentLineWords[i]);
+            // Add base spaces plus one extra space for the first 'extraSpaces' gaps
+             const spacesToAdd = baseSpacesPerGap + (i < extraSpaces ? 1 : 0);
+             justifiedLine.push(' '.repeat(spacesToAdd));
+        }
+        
+        // Add the last word without trailing spaces
+        justifiedLine.push(currentLineWords[currentLineWords.length - 1]);
+
+        result.push(justifiedLine.join(''));
+    }
+    
     return result;
 };
-
-function justifyLine(line, lineLength, maxWidth) {
-    const spacesNeeded = maxWidth - lineLength;
-    const gaps = line.length - 1;
-
-    if (gaps === 0) {
-        return line[0] + ' '.repeat(spacesNeeded);
-    }
-
-    const spacesPerGap = Math.floor(spacesNeeded / gaps);
-    const extraSpaces = spacesNeeded % gaps;
-
-    let justified = '';
-    for (let i = 0; i < gaps; i++) {
-        justified += line[i] + ' '.repeat(spacesPerGap + (i < extraSpaces ? 1 : 0));
-    }
-    justified += line[gaps]; // add the last word
-
-    return justified;
-}
-
-function leftJustifyLine(line, maxWidth) {
-    return line.join(' ') + ' '.repeat(maxWidth - line.join(' ').length);
-}
