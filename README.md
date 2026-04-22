@@ -1,7 +1,7 @@
 # 🧩 LeetCode Solutions in JavaScript
 
 [![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Problems](https://img.shields.io/badge/Problems-40%2B-blue)](./javascript/)
+[![Problems](https://img.shields.io/badge/Problems-53%2B-blue)](./javascript/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A curated collection of clean, well-documented solutions to popular LeetCode problems, written in JavaScript. Each solution includes problem description, approach explanation, and time/space complexity analysis.
@@ -35,6 +35,7 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 326 | [Power of Three](./javascript/326powerOfThree.js) | Easy | Math / Division |
 | 268 | [Missing Number](./javascript/268missingNumber.js) | Easy | XOR / Math |
 | 1572 | [Matrix Diagonal Sum](./javascript/1572matrixDiagonalSum.js) | Easy | Matrix Traversal |
+| 220 | [Contains Duplicate III](./javascript/220containsDuplicatesIII.js) | Medium | Sorted Window / Bucket Sort |
 
 ### Two Pointers & Sliding Window
 | # | Problem | Difficulty | Key Concepts |
@@ -57,6 +58,9 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 344 | [Reverse String](./javascript/344reverseString.js) | Easy | Two Pointers |
 | 541 | [Reverse String II](./javascript/541reverseStringII.js) | Easy | String Manipulation |
 | 394 | [Decode String](./javascript/394decodeString.js) | Medium | Stack |
+| 68 | [Text Justification](./javascript/68textJustification.js) | Hard | Greedy / Simulation |
+| 415 | [Add Strings](./javascript/415addStrings.js) | Easy | Two Pointers / Simulation |
+| 696 | [Count Binary Substrings](./javascript/696countBinarySubstring.js) | Easy | Group Counting |
 
 ### Graphs & Trees
 | # | Problem | Difficulty | Key Concepts |
