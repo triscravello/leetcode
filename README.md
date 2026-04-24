@@ -1,7 +1,7 @@
 # 🧩 LeetCode Solutions in JavaScript
 
 [![JavaScript](https://img.shields.io/badge/Language-JavaScript-F7DF1E?logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Problems](https://img.shields.io/badge/Problems-53%2B-blue)](./javascript/)
+[![Problems](https://img.shields.io/badge/Problems-74%2B-blue)](./javascript/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
 A curated collection of clean, well-documented solutions to popular LeetCode problems, written in JavaScript. Each solution includes problem description, approach explanation, and time/space complexity analysis.
@@ -31,6 +31,7 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 560 | [Subarray Sum Equals K](./javascript/560subarraySumEqualsK.js) | Medium | Prefix Sum + Hash Map |
 | 325 | [Maximum Size Subarray Sum Equals K](./javascript/325maximumSizeSubarraySumEqualsK.js) | Medium | Prefix Sum |
 | 1314 | [Matrix Block Sum](./javascript/1314matrixBlockSum.js) | Medium | 2D Prefix Sum |
+| 2460 | [Apply Operations to an Array](./javascript/2460applyOperationstoanArray.js) | Easy | Simulation / Two Pointers |
 | 204 | [Count Primes](./javascript/204countPrimes.js) | Medium | Sieve of Eratosthenes |
 | 326 | [Power of Three](./javascript/326powerOfThree.js) | Easy | Math / Division |
 | 268 | [Missing Number](./javascript/268missingNumber.js) | Easy | XOR / Math |
@@ -40,6 +41,16 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 ### Two Pointers & Sliding Window
 | # | Problem | Difficulty | Key Concepts |
 |---|---------|------------|--------------|
+| 15 | [3Sum](./javascript/15threeSum.js) | Medium | Two Pointers + Sorting |
+| 18 | [4Sum](./javascript/18fourSum.js) | Medium | Two Pointers + Sorting |
+| 26 | [Remove Duplicates from Sorted Array](./javascript/26removeDuplicatesfromSortedArray.js) | Easy | Two Pointers |
+| 27 | [Remove Element](./javascript/27removeElement.js) | Easy | Two Pointers |
+| 80 | [Remove Duplicates from Sorted Array II](./javascript/80removeDuplicatesfromSortedArrayII.js) | Medium | Two Pointers |
+| 125 | [Valid Palindrome](./javascript/125validPalindrome.js) | Easy | Two Pointers |
+| 167 | [Two Sum II - Input Array Is Sorted](./javascript/167twoSumIIInputArrayIsSorted.js) | Medium | Two Pointers |
+| 234 | [Palindrome Linked List](./javascript/234palindromLinkedList.js) | Easy | Two Pointers + Slow/Fast |
+| 680 | [Valid Palindrome II](./javascript/680validPalindromeII.js) | Easy | Two Pointers + Greedy |
+| 977 | [Squares of a Sorted Array](./javascript/977squaresofaSortedArray.js) | Easy | Two Pointers |
 | 3 | [Longest Substring Without Repeating Characters](./javascript/3longestSubstringWithoutRepeating.js) | Medium | Sliding Window + Set |
 | 424 | [Longest Repeating Character Replacement](./javascript/424longestRepeatingCharacterReplacement.js) | Medium | Sliding Window |
 | 239 | [Sliding Window Maximum](./javascript/239slidingWindowMaximum.js) | Hard | Monotonic Deque |
@@ -61,6 +72,10 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 68 | [Text Justification](./javascript/68textJustification.js) | Hard | Greedy / Simulation |
 | 415 | [Add Strings](./javascript/415addStrings.js) | Easy | Two Pointers / Simulation |
 | 696 | [Count Binary Substrings](./javascript/696countBinarySubstring.js) | Easy | Group Counting |
+| 438 | [Find All Anagrams in a String](./javascript/438findAllAnagramsinaString.js) | Medium | Sliding Window + Hash Map |
+| 2108 | [Find First Palindromic String in the Array](./javascript/2108findFirstPalindromicStringintheArray.js) | Easy | Two Pointers |
+| 2273 | [Find Resultant Array After Removing Anagrams](./javascript/2273findResultantArrayAfterRemovingAnagrams.js) | Easy | Hash Map + Sorting |
+| 3035 | [Maximum Palindromes After Operations](./javascript/3035maximumPalindromesAfterOperations.js) | Medium | Hash Map / Greedy |
 
 ### Graphs & Trees
 | # | Problem | Difficulty | Key Concepts |
@@ -69,13 +84,21 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 | 133 | [Clone Graph](./javascript/133cloneGraph.js) | Medium | DFS/BFS + Hash Map |
 | 207 | [Course Schedule](./javascript/207courseSchedule.js) | Medium | Topological Sort (Kahn's Algorithm) |
 | 210 | [Course Schedule II](./javascript/210courseScheduleII.js) | Medium | Topological Sort |
+| 654 | [Two Sum IV - Input is a BST](./javascript/654twoSumIVInputisaBST.js) | Easy | BST + Hash Set / Two Pointers |
 | 994 | [Rotting Oranges](./javascript/994rottingOranges.js) | Medium | BFS on Grid |
+| 2615 | [Sum of Distances](./javascript/2615sumofDistances.js) | Medium | Tree / Prefix Sum |
 
 ### Intervals
 | # | Problem | Difficulty | Key Concepts |
 |---|---------|------------|--------------|
 | 253 | [Meeting Rooms II](./javascript/253meetingRoomsII.js) | Medium | Two Pointers + Sorting |
 | 759 | [Employee Free Time](./javascript/759employeeFreeTime.js) | Hard | Merge Intervals |
+
+### Linked List
+| # | Problem | Difficulty | Key Concepts |
+|---|---------|------------|--------------|
+| 2 | [Add Two Numbers](./javascript/2addTwoNumbers.js) | Medium | Linked List / Carry Simulation |
+| 234 | [Palindrome Linked List](./javascript/234palindromLinkedList.js) | Easy | Two Pointers + Slow/Fast |
 
 ### Stack & Design
 | # | Problem | Difficulty | Key Concepts |
@@ -86,6 +109,8 @@ A curated collection of clean, well-documented solutions to popular LeetCode pro
 ### Dynamic Programming / Greedy
 | # | Problem | Difficulty | Key Concepts |
 |---|---------|------------|--------------|
+| 509 | [Fibonacci Number](./javascript/509fibonacciNumber.js) | Easy | DP / Recursion + Memoization |
+| 2002 | [Maximum Product of the Length of Two Palindromic Subsequences](./javascript/2002maximumProductoftheLengthofTwoPalindromicSubsequences.js) | Medium | DP + Backtracking |
 | 416 | [Partition Equal Subset Sum](./javascript/416partitionEqualSubsetSum.js) | Medium | 0/1 Knapsack / DP |
 | 494 | [Target Sum](./javascript/494targetSum.js) | Medium | 0/1 Knapsack / DP |
 | 53 | [Maximum Subarray](./javascript/53maximumSubarray.js) | Easy | Kadane's Algorithm |
